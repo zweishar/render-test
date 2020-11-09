@@ -1,3 +1,5 @@
+Adding random change so that I can submit a PR + test the preview environment.
+
 # Adapt template for Drupal projects
 
 Based on [drupal composer project](https://github.com/drupal-composer/drupal-project).
