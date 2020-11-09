@@ -1,0 +1,17 @@
+$icon-search: 'search.svg';
+$icon-close: 'close.svg';
+
+@mixin icon($icon, $size: 100%, $position: 50%) {
+  background-size: $size;
+  background-position: $position;
+  background-repeat: no-repeat;
+  background-image: svg-load($icon);
+}
+
+.icon-search {
+  @include icon($icon-search);
+}
+
+.icon-close {
+  @include icon($icon-close);
+}

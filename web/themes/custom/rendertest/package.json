@@ -1,0 +1,48 @@
+{
+  "name": "rendertest",
+  "version": "1.0.0",
+  "description": "rendertest theme.",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run dev -- --watch",
+    "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "live": "livereload ./dist -e 'css'",
+    "dist:clean": "rm -rf ./dist/*"
+  },
+  "devDependencies": {
+    "animejs": "^3.2.0",
+    "cross-env": "^6.0.3",
+    "husky": "^3.1.0",
+    "import-glob-loader": "^1.1.0",
+    "laravel-mix": "^5.0.4",
+    "lint-staged": "^9.5.0",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-inline-svg": "^4.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-svgo": "^4.0.2",
+    "prettier": "1.19.1",
+    "sass": "^1.26.7",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "livereload": "^0.9.1",
+    "tailwindcss": "^1.4.6"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,css,scss,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

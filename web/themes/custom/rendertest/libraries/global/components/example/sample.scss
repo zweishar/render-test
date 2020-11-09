@@ -1,0 +1,23 @@
+.sample-component {
+  background-color: $cl-grey-002;
+  background-image: url('./img/search.png'), url('./img/search.svg');
+
+  // https://tailwindcss.com/docs/extracting-components/#extracting-css-components-with-apply
+  @apply m-1;
+}
+
+// https://github.com/TrySound/postcss-inline-svg
+@svg-load search url(search.svg) {
+  fill: #cfc;
+  path:nth-child(2) {
+    fill: #ff0;
+  }
+}
+
+.search-icon {
+  background: svg-inline(search);
+}
+
+.close-icon {
+  background: svg-load('close.svg', fill=#000, stroke=#fff);
+}

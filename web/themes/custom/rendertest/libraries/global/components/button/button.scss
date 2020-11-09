@@ -1,0 +1,20 @@
+input[type='submit'].button {
+  @apply px-6;
+  @apply py-2;
+  @apply m-2;
+
+  background-color: $cl-grey-001;
+  color: $cl-black;
+  @apply rounded-sm;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $cl-grey-003;
+    color: $cl-white;
+  }
+
+  & + & {
+    @apply ml-0;
+  }
+}

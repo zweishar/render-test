@@ -1,0 +1,17 @@
+name: rendertest
+description: "rendertest theme"
+core: 8.x
+type: theme
+base theme: stable
+
+libraries:
+  - rendertest/global
+
+regions:
+  header: 'Header'
+  breadcrumb: Breadcrumb
+  content_top: 'Content Top'
+  content: 'Content'
+  left_sidebar: 'Left Sidebar'
+  right_sidebar: 'Right Sidebar'
+  footer: 'Footer'

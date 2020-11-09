@@ -1,0 +1,7 @@
+global:
+  version: 1
+  css:
+    base:
+      dist/global/global.css: {}
+  js:
+    dist/global/global.js: {}

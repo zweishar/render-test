@@ -1,0 +1,52 @@
+/// Mixin to manage responsive breakpoints
+/// Example:
+///
+/// @include breakpoint('sm') {}
+///
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin breakpoint($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin rect($width: 50px, $height: $width) {
+  height: $height;
+  width: $width;
+  min-width: $width;
+  min-height: $height;
+  max-width: $width;
+  max-height: $height;
+  @content;
+}
+
+@mixin circle($diameter: 50px) {
+  @include rect($diameter) {
+    border-radius: 100vh;
+  }
+  @content;
+}
+
+@mixin inline-block-rect($width: 50px, $height: $width) {
+  @include rect($width, $height) {
+    display: inline-block;
+  }
+}
+
+@mixin ie11 {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}

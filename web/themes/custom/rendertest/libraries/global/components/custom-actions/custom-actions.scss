@@ -1,0 +1,51 @@
+.custom-actions {
+  border: 1px solid $cl-grey-001;
+  @apply m-2;
+
+  ul {
+    @apply flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    @apply m-0;
+    @apply p-0;
+
+    a {
+      display: block;
+      @apply pr-4;
+      @apply pl-8;
+      @apply py-1;
+    }
+  }
+
+  .is-active {
+    background-color: $cl-grey-001;
+  }
+
+  @mixin svgicon($icon, $color, $hoverColor: $color) {
+    background: svg-load($icon + '.svg', stroke=$color);
+    background-repeat: no-repeat;
+    background-position: 0.2em center;
+    &:hover {
+      color: $cl-grey-003;
+      background: svg-load($icon + '.svg', stroke=$hoverColor);
+      background-repeat: no-repeat;
+      background-position: 0.2em center;
+    }
+  }
+
+  [data-drupal-link-system-path^='node/'] {
+    @include svgicon('view', $cl-white, $cl-grey-001);
+  }
+
+  [data-drupal-link-system-path$='/edit'] {
+    @include svgicon('edit', $cl-grey-001, $cl-grey-002);
+  }
+
+  [data-drupal-link-system-path$='/delete'] {
+    @include svgicon('delete', $cl-grey-001, $cl-grey-002);
+  }
+
+  [data-drupal-link-system-path$='/revisions'] {
+    @include svgicon('revision', $cl-grey-001, $cl-grey-002);
+  }
+}

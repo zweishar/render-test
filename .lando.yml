@@ -1,0 +1,14 @@
+name: rendertest
+recipe: drupal8
+config:
+  webroot: web
+  xdebug: true
+services:
+  mailhog:
+    type: mailhog
+    portforward: false
+    hogfrom:
+      - appserver
+proxy:
+  mailhog:
+    - mail.rendertest.lndo.site
