@@ -1,3 +1,5 @@
+What happens when you push updates to a PR?
+
 Adding random change so that I can submit a PR + test the preview environment.
 
 # Adapt template for Drupal projects
