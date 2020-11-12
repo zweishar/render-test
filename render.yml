@@ -1,7 +1,7 @@
 services:
 # A Docker web service
 - type: web
-  name: webdis
+  name: render-test
   env: docker
   repo: https://github.com/render-examples/webdis.git # optional
   region: oregon                                      # optional (defaults to oregon)
