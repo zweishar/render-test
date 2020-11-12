@@ -2,5 +2,3 @@ services:
   - type: web
     name: render-test-1
     env: docker
-    repo: https://github.com/zweishar/render-test.git # optional
-    dockerCommand: ./webdis.sh # optional (defaults to Dockerfile command)
