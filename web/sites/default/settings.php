@@ -797,11 +797,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # }
 $settings['config_sync_directory'] = '../config/sync';
 
-$databases['default']['default'] = [
-  'driver' => 'mysql',
-  'database' => 'drupal8',
-  'username' => 'drupal8',
-  'password' => 'drupal8',
-  'host' => 'database',
-  'port' => '3306',
-];
+// $databases['default']['default'] = [
+//   'driver' => 'mysql',
+//   'database' => 'drupal8',
+//   'username' => 'drupal8',
+//   'password' => 'drupal8',
+//   'host' => 'database',
+//   'port' => '3306',
+// ];
