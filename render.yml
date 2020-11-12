@@ -1,23 +1,6 @@
 services:
-# A Docker web service
 - type: web
   name: render-test
   env: docker
-  repo: https://github.com/render-examples/webdis.git # optional
-  region: oregon                                      # optional (defaults to oregon)
-  plan: standard                                      # optional
-  branch: master                                      # optional (uses repo default)
+  repo: https://github.com/zweishar/render-test.git # optional
   dockerCommand: ./webdis.sh                          # optional (defaults to Dockerfile command)
-  healthCheckPath: /
-  envVars:
-  - key: REDIS_HOST
-    fromService:
-      name: redis
-      type: pserv
-      property: host          # available properties are listed below
-  - key: REDIS_PORT
-    fromService:
-      name: redis
-      type: pserv
-      property: port
-  - fromGroup: conc-settings
