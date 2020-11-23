@@ -24,6 +24,8 @@ services:
         # Install drush-launcher, if desired.
         # - wget -O /usr/local/bin/drush https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar
         # - chmod +x /usr/local/bin/drush
+        - composer --no-ansi global require drush/drush:10.*
+        - ln -sf ~/.composer/vendor/bin/drush /usr/local/bin/drush
 
         # Link the document root to the expected path. This example links /web
         # to the docroot.
@@ -76,12 +78,12 @@ services:
       # from the base preview.
       build:
         # - composer install --optimize-autoloader
-        - drush si minimal -y
-        - drush config-set "system.site" uuid "6983a8a9-243b-493c-8386-930f723f7817"
-        - drush cache:rebuild
-        - drush config:import -y
-        - drush updatedb -y
-        - drush cache:rebuild
+        - drush -r "${DOCROOT}" si minimal -y
+        - drush -r "${DOCROOT}" config-set "system.site" uuid "6983a8a9-243b-493c-8386-930f723f7817"
+        - drush -r "${DOCROOT}" cache:rebuild
+        - drush -r "${DOCROOT}" config:import -y
+        - drush -r "${DOCROOT}" updatedb -y
+        - drush -r "${DOCROOT}" cache:rebuild
 
   # What to call the service hosting MySQL. This name also acts as the
   # hostname to access the service by from the php service.
