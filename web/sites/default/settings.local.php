@@ -157,17 +157,14 @@ $settings['skip_permissions_hardening'] = TRUE;
 /**
  * Local development overrides.
  */
-if (!empty(getenv('LANDO_INFO'))) {
-  $lando_info = json_decode(getenv('LANDO_INFO'), TRUE);
-  $databases['default']['default'] = [
-    'driver' => 'mysql',
-    'database' => $lando_info['database']['creds']['database'],
-    'username' => $lando_info['database']['creds']['user'],
-    'password' => $lando_info['database']['creds']['password'],
-    'host' => $lando_info['database']['internal_connection']['host'],
-    'port' => $lando_info['database']['internal_connection']['port'],
-  ];
-}
+$databases['default']['default'] = [
+  'driver' => 'mysql',
+  'database' => 'drupal9',
+  'username' => 'drupal9',
+  'password' => 'drupal9',
+  'host' => 'database',
+  'port' => '3306',
+];
 
 $settings['hash_salt'] = 'ZJCBlv9mViQHkdtaf2d44AdY8q-JQy_qotPwBYurRyIj8lY1tXELH8Vrl7xn3RPyuYxYnHloAQ';
 
