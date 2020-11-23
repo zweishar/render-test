@@ -78,12 +78,12 @@ services:
       # from the base preview.
       build:
         # - composer install --optimize-autoloader
-        # - drush -r "${DOCROOT}" si minimal -y
-        # - drush -r "${DOCROOT}" config-set "system.site" uuid "6983a8a9-243b-493c-8386-930f723f7817"
-        # - drush -r "${DOCROOT}" cache:rebuild
-        # - drush -r "${DOCROOT}" config:import -y
-        # - drush -r "${DOCROOT}" updatedb -y
-        # - drush -r "${DOCROOT}" cache:rebuild
+        - drush -r "${DOCROOT}" si minimal -y
+        - drush -r "${DOCROOT}" config-set "system.site" uuid "6983a8a9-243b-493c-8386-930f723f7817"
+        - drush -r "${DOCROOT}" cache:rebuild
+        - drush -r "${DOCROOT}" config:import -y
+        - drush -r "${DOCROOT}" updatedb -y
+        - drush -r "${DOCROOT}" cache:rebuild
 
   # What to call the service hosting MySQL. This name also acts as the
   # hostname to access the service by from the php service.
