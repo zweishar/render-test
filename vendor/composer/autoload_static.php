@@ -513,11 +513,11 @@ class ComposerStaticInit4134fea365ba087a5d64782a9663e327
         ),
         'Drupal\\Driver\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/web/drivers/lib/Drupal/Driver',
+            0 => __DIR__ . '/..' . '/drupal/drivers/lib/Drupal/Driver',
         ),
         'Drupal\\Core\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/web/core/lib/Drupal/Core',
+            0 => __DIR__ . '/..' . '/drupal/core/lib/Drupal/Core',
         ),
         'Drupal\\Console\\Core\\' => 
         array (
@@ -537,7 +537,7 @@ class ComposerStaticInit4134fea365ba087a5d64782a9663e327
         ),
         'Drupal\\Component\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component',
+            0 => __DIR__ . '/..' . '/drupal/core/lib/Drupal/Component',
         ),
         'Drupal\\' => 
         array (
@@ -743,16 +743,16 @@ class ComposerStaticInit4134fea365ba087a5d64782a9663e327
 
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
-        'Drupal' => __DIR__ . '/../..' . '/web/core/lib/Drupal.php',
+        'Drupal' => __DIR__ . '/..' . '/drupal/core/lib/Drupal.php',
         'DrupalFinder\\DrupalFinder' => __DIR__ . '/..' . '/webflo/drupal-finder/src/DrupalFinder.php',
         'DrupalProject\\composer\\ProjectSetup' => __DIR__ . '/../..' . '/scripts/composer/ProjectSetup.php',
         'DrupalProject\\composer\\ScriptHandler' => __DIR__ . '/../..' . '/scripts/composer/ScriptHandler.php',
-        'Drupal\\Component\\Utility\\Timer' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component/Utility/Timer.php',
-        'Drupal\\Component\\Utility\\Unicode' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component/Utility/Unicode.php',
-        'Drupal\\Core\\Database\\Database' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Core/Database/Database.php',
-        'Drupal\\Core\\DrupalKernel' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Core/DrupalKernel.php',
-        'Drupal\\Core\\DrupalKernelInterface' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Core/DrupalKernelInterface.php',
-        'Drupal\\Core\\Site\\Settings' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Core/Site/Settings.php',
+        'Drupal\\Component\\Utility\\Timer' => __DIR__ . '/..' . '/drupal/core/lib/Drupal/Component/Utility/Timer.php',
+        'Drupal\\Component\\Utility\\Unicode' => __DIR__ . '/..' . '/drupal/core/lib/Drupal/Component/Utility/Unicode.php',
+        'Drupal\\Core\\Database\\Database' => __DIR__ . '/..' . '/drupal/core/lib/Drupal/Core/Database/Database.php',
+        'Drupal\\Core\\DrupalKernel' => __DIR__ . '/..' . '/drupal/core/lib/Drupal/Core/DrupalKernel.php',
+        'Drupal\\Core\\DrupalKernelInterface' => __DIR__ . '/..' . '/drupal/core/lib/Drupal/Core/DrupalKernelInterface.php',
+        'Drupal\\Core\\Site\\Settings' => __DIR__ . '/..' . '/drupal/core/lib/Drupal/Core/Site/Settings.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'PEAR_Exception' => __DIR__ . '/..' . '/pear/pear_exception/PEAR/Exception.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',

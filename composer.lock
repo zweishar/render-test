@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a294b2eb0e2951bc2e5a9dbe41a8d2e1",
+    "content-hash": "3819d4ccb51c105a50bc2271c58595c9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2454,16 +2454,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.9.8",
+            "version": "8.9.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "e16f650e7bd7f0cfb4ff4dd8ed753625313cdfdb"
+                "reference": "724ada1a6c497a663797c40e4ee3d0c7c618371d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/e16f650e7bd7f0cfb4ff4dd8ed753625313cdfdb",
-                "reference": "e16f650e7bd7f0cfb4ff4dd8ed753625313cdfdb",
+                "url": "https://api.github.com/repos/drupal/core/zipball/724ada1a6c497a663797c40e4ee3d0c7c618371d",
+                "reference": "724ada1a6c497a663797c40e4ee3d0c7c618371d",
                 "shasum": ""
             },
             "require": {
@@ -2681,11 +2681,11 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-11-05T16:34:55+00:00"
+            "time": "2020-11-17T22:05:46+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "8.9.8",
+            "version": "8.9.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2732,21 +2732,21 @@
         },
         {
             "name": "drush/drush",
-            "version": "10.3.5",
+            "version": "10.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "ce1352c816d8852e64226142eeddc68f823646f1"
+                "reference": "fc985a95c6010e04891a2dbcf3f39984b8c9ef0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/ce1352c816d8852e64226142eeddc68f823646f1",
-                "reference": "ce1352c816d8852e64226142eeddc68f823646f1",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/fc985a95c6010e04891a2dbcf3f39984b8c9ef0a",
+                "reference": "fc985a95c6010e04891a2dbcf3f39984b8c9ef0a",
                 "shasum": ""
             },
             "require": {
                 "chi-teck/drupal-code-generator": "^1.32.1",
-                "composer/semver": "^1.4",
+                "composer/semver": "^1.4 || ^3",
                 "consolidation/config": "^1.2",
                 "consolidation/filter-via-dot-access-data": "^1",
                 "consolidation/robo": "^1.4.11 || ^2",
@@ -2760,7 +2760,7 @@
                 "psr/log": "~1.0",
                 "psy/psysh": "~0.6",
                 "symfony/event-dispatcher": "^3.4 || ^4.0",
-                "symfony/finder": "^3.4 || ^4.0",
+                "symfony/finder": "^3.4 || ^4.0 || ^5",
                 "symfony/var-dumper": "^3.4 || ^4.0 || ^5.0",
                 "symfony/yaml": "^3.4 || ^4.0",
                 "webflo/drupal-finder": "^1.2",
@@ -2772,7 +2772,6 @@
                 "david-garcia/phpwhois": "4.3.0",
                 "drupal/alinks": "1.0.0",
                 "drupal/core-recommended": "^8.8",
-                "g1a/composer-test-scenarios": "^3",
                 "lox/xhprof": "dev-master",
                 "phpunit/phpunit": "^4.8.36 || ^6.1",
                 "squizlabs/php_codesniffer": "^2.7 || ^3",
@@ -2862,7 +2861,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-05T11:50:13+00:00"
+            "time": "2020-11-11T04:36:51+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -2928,16 +2927,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.23",
+            "version": "2.1.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "5fa792ad1853ae2bc60528dd3e5cbf4542d3c1df"
+                "reference": "ca90a3291eee1538cd48ff25163240695bd95448"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/5fa792ad1853ae2bc60528dd3e5cbf4542d3c1df",
-                "reference": "5fa792ad1853ae2bc60528dd3e5cbf4542d3c1df",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/ca90a3291eee1538cd48ff25163240695bd95448",
+                "reference": "ca90a3291eee1538cd48ff25163240695bd95448",
                 "shasum": ""
             },
             "require": {
@@ -2982,7 +2981,13 @@
                 "validation",
                 "validator"
             ],
-            "time": "2020-10-31T20:37:35+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/egulias",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-14T15:56:27+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -3345,36 +3350,36 @@
         },
         {
             "name": "laminas/laminas-escaper",
-            "version": "2.6.1",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-escaper.git",
-                "reference": "25f2a053eadfa92ddacb609dcbbc39362610da70"
+                "reference": "5e04bc5ae5990b17159d79d331055e2c645e5cc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/25f2a053eadfa92ddacb609dcbbc39362610da70",
-                "reference": "25f2a053eadfa92ddacb609dcbbc39362610da70",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/5e04bc5ae5990b17159d79d331055e2c645e5cc5",
+                "reference": "5e04bc5ae5990b17159d79d331055e2c645e5cc5",
                 "shasum": ""
             },
             "require": {
                 "laminas/laminas-zendframework-bridge": "^1.0",
-                "php": "^5.6 || ^7.0"
+                "php": "^7.3 || ~8.0.0"
             },
             "replace": {
-                "zendframework/zend-escaper": "self.version"
+                "zendframework/zend-escaper": "^2.6.1"
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "~1.0.0",
-                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2"
+                "phpunit/phpunit": "^9.3",
+                "psalm/plugin-phpunit": "^0.12.2",
+                "vimeo/psalm": "^3.16"
+            },
+            "suggest": {
+                "ext-iconv": "*",
+                "ext-mbstring": "*"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.6.x-dev",
-                    "dev-develop": "2.7.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Laminas\\Escaper\\": "src/"
@@ -3390,20 +3395,26 @@
                 "escaper",
                 "laminas"
             ],
-            "time": "2019-12-31T16:43:30+00:00"
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-11-17T21:26:43+00:00"
         },
         {
             "name": "laminas/laminas-feed",
-            "version": "2.12.3",
+            "version": "2.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-feed.git",
-                "reference": "3c91415633cb1be6f9d78683d69b7dcbfe6b4012"
+                "reference": "fb89aac1984222227f37792dd193d34829a0762f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/3c91415633cb1be6f9d78683d69b7dcbfe6b4012",
-                "reference": "3c91415633cb1be6f9d78683d69b7dcbfe6b4012",
+                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/fb89aac1984222227f37792dd193d34829a0762f",
+                "reference": "fb89aac1984222227f37792dd193d34829a0762f",
                 "shasum": ""
             },
             "require": {
@@ -3412,7 +3423,10 @@
                 "laminas/laminas-escaper": "^2.5.2",
                 "laminas/laminas-stdlib": "^3.2.1",
                 "laminas/laminas-zendframework-bridge": "^1.0",
-                "php": "^5.6 || ^7.0"
+                "php": "^7.3 || ~8.0.0"
+            },
+            "conflict": {
+                "laminas/laminas-servicemanager": "<3.3"
             },
             "replace": {
                 "zendframework/zend-feed": "^2.12.0"
@@ -3422,10 +3436,12 @@
                 "laminas/laminas-coding-standard": "~1.0.0",
                 "laminas/laminas-db": "^2.8.2",
                 "laminas/laminas-http": "^2.7",
-                "laminas/laminas-servicemanager": "^2.7.8 || ^3.3",
+                "laminas/laminas-servicemanager": "^3.3",
                 "laminas/laminas-validator": "^2.10.1",
-                "phpunit/phpunit": "^5.7.27 || ^6.5.14 || ^7.5.20",
-                "psr/http-message": "^1.0.1"
+                "phpunit/phpunit": "^9.3",
+                "psalm/plugin-phpunit": "^0.13.0",
+                "psr/http-message": "^1.0.1",
+                "vimeo/psalm": "^4.1"
             },
             "suggest": {
                 "laminas/laminas-cache": "Laminas\\Cache component, for optionally caching feeds between requests",
@@ -3436,12 +3452,6 @@
                 "psr/http-message": "PSR-7 ^1.0.1, if you wish to use Laminas\\Feed\\Reader\\Http\\Psr7ResponseDecorator"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.12.x-dev",
-                    "dev-develop": "2.13.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Laminas\\Feed\\": "src/"
@@ -3463,20 +3473,20 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-08-18T13:45:04+00:00"
+            "time": "2020-11-18T21:02:52+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
-            "version": "3.3.0",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "b9d84eaa39fde733356ea948cdef36c631f202b6"
+                "reference": "d81c7ffe602ed0e6ecb18691019111c0f4bf1efe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/b9d84eaa39fde733356ea948cdef36c631f202b6",
-                "reference": "b9d84eaa39fde733356ea948cdef36c631f202b6",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/d81c7ffe602ed0e6ecb18691019111c0f4bf1efe",
+                "reference": "d81c7ffe602ed0e6ecb18691019111c0f4bf1efe",
                 "shasum": ""
             },
             "require": {
@@ -3489,15 +3499,9 @@
             "require-dev": {
                 "laminas/laminas-coding-standard": "~1.0.0",
                 "phpbench/phpbench": "^0.17.1",
-                "phpunit/phpunit": "^9.3.7"
+                "phpunit/phpunit": "~9.3.7"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3.x-dev",
-                    "dev-develop": "3.4.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Laminas\\Stdlib\\": "src/"
@@ -3519,7 +3523,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-08-25T09:08:16+00:00"
+            "time": "2020-11-19T20:18:59+00:00"
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
@@ -3759,16 +3763,16 @@
         },
         {
             "name": "pear/archive_tar",
-            "version": "1.4.10",
+            "version": "1.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Archive_Tar.git",
-                "reference": "bbb4f10f71a1da2715ec6d9a683f4f23c507a49b"
+                "reference": "17d355cb7d3c4ff08e5729f29cd7660145208d9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/bbb4f10f71a1da2715ec6d9a683f4f23c507a49b",
-                "reference": "bbb4f10f71a1da2715ec6d9a683f4f23c507a49b",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/17d355cb7d3c4ff08e5729f29cd7660145208d9d",
+                "reference": "17d355cb7d3c4ff08e5729f29cd7660145208d9d",
                 "shasum": ""
             },
             "require": {
@@ -3821,7 +3825,7 @@
                 "archive",
                 "tar"
             ],
-            "time": "2020-09-15T14:13:23+00:00"
+            "time": "2020-11-19T22:10:24+00:00"
         },
         {
             "name": "pear/console_getopt",
@@ -7445,16 +7449,16 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "6e076a124f7ee146f2487554a94b6a19a74887ba"
+                "reference": "f28d44c286812c714741478d968104c5e604a1d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/6e076a124f7ee146f2487554a94b6a19a74887ba",
-                "reference": "6e076a124f7ee146f2487554a94b6a19a74887ba",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f28d44c286812c714741478d968104c5e604a1d4",
+                "reference": "f28d44c286812c714741478d968104c5e604a1d4",
                 "shasum": ""
             },
             "require": {
@@ -7499,40 +7503,35 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-24T12:39:10+00:00"
+            "time": "2020-11-13T08:04:11+00:00"
         },
         {
             "name": "doctrine/instantiator",
-            "version": "1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "f350df0268e904597e3bd9c4685c53e0e333feea"
+                "reference": "d56bf6102915de5702778fe20f2de3b2fe570b5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/f350df0268e904597e3bd9c4685c53e0e333feea",
-                "reference": "f350df0268e904597e3bd9c4685c53e0e333feea",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/d56bf6102915de5702778fe20f2de3b2fe570b5b",
+                "reference": "d56bf6102915de5702778fe20f2de3b2fe570b5b",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^6.0",
+                "doctrine/coding-standard": "^8.0",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-                "phpbench/phpbench": "^0.13",
-                "phpstan/phpstan-phpunit": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpunit/phpunit": "^7.0"
+                "phpbench/phpbench": "^0.13 || 1.0.0-alpha2",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
@@ -7546,7 +7545,7 @@
                 {
                     "name": "Marco Pivetta",
                     "email": "ocramius@gmail.com",
-                    "homepage": "http://ocramius.github.com/"
+                    "homepage": "https://ocramius.github.io/"
                 }
             ],
             "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
@@ -7569,7 +7568,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-29T17:27:14+00:00"
+            "time": "2020-11-10T18:47:58+00:00"
         },
         {
             "name": "drupal/coder",
@@ -7612,7 +7611,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "8.9.8",
+            "version": "8.9.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -7999,16 +7998,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.10.1",
+            "version": "1.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5"
+                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
-                "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/776f831124e9c62e1a2c601ecc52e776d8bb7220",
+                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220",
                 "shasum": ""
             },
             "require": {
@@ -8049,7 +8048,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-29T13:22:24+00:00"
+            "time": "2020-11-13T09:40:50+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -9267,16 +9266,16 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.8.2",
+            "version": "1.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "590cfec960b77fd55e39b7d9246659e95dd6d337"
+                "reference": "9ad6ce79c342fbd44df10ea95511a1b24dee5b57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/590cfec960b77fd55e39b7d9246659e95dd6d337",
-                "reference": "590cfec960b77fd55e39b7d9246659e95dd6d337",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/9ad6ce79c342fbd44df10ea95511a1b24dee5b57",
+                "reference": "9ad6ce79c342fbd44df10ea95511a1b24dee5b57",
                 "shasum": ""
             },
             "require": {
@@ -9322,7 +9321,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-25T06:56:57+00:00"
+            "time": "2020-11-11T09:19:24+00:00"
         },
         {
             "name": "seld/phar-utils",
