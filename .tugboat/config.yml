@@ -75,6 +75,8 @@ services:
       # from the base preview.
       build:
         - composer install --optimize-autoloader
+        - drush si minimal -y
+        - drush config-set "system.site" uuid "6983a8a9-243b-493c-8386-930f723f7817"
         - drush cache:rebuild
         - drush config:import -y
         - drush updatedb -y
